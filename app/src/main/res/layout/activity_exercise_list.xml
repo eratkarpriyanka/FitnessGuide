@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exercise_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="theleague.android.com.fitnessguide.activities.ExerciseListActivity">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gv_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:columnWidth="80dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="30dp"
+        android:horizontalSpacing="10dp"
+        android:padding="5dp"
+        android:stretchMode="spacingWidthUniform" >
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/tvEmptyList"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
